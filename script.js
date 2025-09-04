@@ -20,9 +20,43 @@ const perguntas = [
     ]
 },
 {
-    enunciado: "Pergunta 3"
+    enunciado: "Você sente que aprende mais rápido quando usa algum recurso com IA?"
     alternativas: [
-        "Alternativa 1"
-        "Alternativa 2"
+        "Sim"
+        "Não"
     ]
 },
+{
+    enuncido: " Você confia nas respostas que a inteligência artificial te dá?"
+    alternativas: [
+        "Sim"
+        "Não"
+    ]
+},
+{
+    enunciado: "Você gostaria que a IA estivesse mais presente nas aulas? "
+    alternativas: [
+        "Sim"
+        "Não"
+    ]
+},
+];
+
+let atual = 0;
+let perguntaAtual;
+
+function mostraPergunta() {
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    mostraAlternativas();
+}
+
+function mostraAlternativas() {
+    for (const alternativa of perguntaAtual.alternativas) {
+        const botaoAlternativas = document.createElement("button");
+        botaoAlternativas.textContent = alternativa;
+        caixaAlternativas.appendChild(boytaoAlternatives);
+    }
+}
+
+mostraPergunta();
