@@ -59,4 +59,11 @@ function mostraAlternativas() {
     }
 }
 
+function respostaSelecionada(opcaoSelecionaada){
+    const afirmacoes = opcaoSelecionaada.afirmacoes;
+    histiaFinal = afirmacoes;
+    atual++;
+    mostraPergunta();
+}
+
 mostraPergunta();
