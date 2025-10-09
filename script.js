@@ -27,7 +27,7 @@ const perguntas = [
     ]
 },
 {
-    enuncido: " Você confia nas respostas que a inteligência artificial te dá?"
+    enunciado: " Você confia nas respostas que a inteligência artificial te dá?"
     alternativas: [
         "Sim"
         "Não"
@@ -44,6 +44,7 @@ const perguntas = [
 
 let atual = 0;
 let perguntaAtual;
+let historiaFinal = "";
 
 function mostraPergunta() {
     perguntaAtual = perguntas[atual];
